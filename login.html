@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Login</title>
+  </head>
+  <body>
+  
+  
+  
+  <lable>账户:</lable><input type="text" name = "account" id = "account">
+  <lable>密码:</lable><input type="text" name = "psword" id = "psword">
+	  <input type = "button" value = "login" onclick = "login()"> 
+  
+  <script type = "text/javascript">
+      function login(){
+	  		var useracc = document.getElementById("account");
+		  	var userpawd = document.getElementById("psword");
+	  		if(useracc.value == "123" && userpawd.value == "123"){
+			   	alert("Login Success!");
+			}else{
+				useracc.value = "";
+				userpawd.value = "";
+			}
+	  }
+  </script>
+  </body>
+  </html>
